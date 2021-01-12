@@ -34,11 +34,11 @@ class ColaConPrioridad:
     
     def dequeue(self): 
         if not self.is_empty():
-            print("Pasagero evacuado exitosamente")
+            print("Pasajero evacuado exitosamente")
             return self.__data.pop(0)
             
         else:
-            print("Ningun pasagero a bordo")
+            print("Ningun pasajero a bordo")
             return None
     def length(self):
         return len(self.__data)
