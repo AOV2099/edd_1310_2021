@@ -4,11 +4,10 @@ def DeleteMidPointStack( stack , pos = 1 ):
     const = round( (stack.lenght() + pos) / 2) 
     
     if pos != const:
-        newStack = stack
         lastVal = stack.peek()
-        newStack.pop()
-        DeleteMidPointStack( newStack, pos = pos + 1 )
-        newStack.push(lastVal)
+        stack.pop()
+        DeleteMidPointStack( stack, pos = pos + 1 )
+        stack.push(lastVal)
     else:
         print( f"Valor en medio de la pila -> {stack.peek()}" )
         stack.pop()
